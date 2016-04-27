@@ -1897,7 +1897,7 @@ function handlePluginsObject(path, moduleList, finishPluginLoading) {
 function findCordovaPath() {
     var path = null;
     var scripts = document.getElementsByTagName('script');
-    var term = __uri("donothashme.js");
+    var term = "donothashme.js";
     for (var n = scripts.length-1; n>-1; n--) {
         var src = scripts[n].src.replace(/\?.*$/, ''); // Strip any query param (CB-6007).
         if (src.indexOf(term) == (src.length - term.length)) {
@@ -1917,7 +1917,7 @@ exports.load = function(callback) {
         console.log('Could not find cordova.js script tag. Plugin loading may fail.');
         pathPrefix = '';
     }
-	var pluginsjspath = pathPrefix + __uri('cordova_plugins.js');
+	var pluginsjspath = pathPrefix + 'cordova_plugins_a11aa16.js';
     injectIfNecessary('cordova/plugin_list', pluginsjspath,/*pathPrefix + 'cordova_plugins.js',*/ function() {
         var moduleList = require("cordova/plugin_list");
         handlePluginsObject(pathPrefix, moduleList, callback);
