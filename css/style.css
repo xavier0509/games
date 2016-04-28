@@ -1,0 +1,108 @@
+body{
+	width: 100%;
+	height: 100%;
+
+}
+body {
+	font-family: "microsoft yahei","微软雅黑";
+}
+body,ul,li,ol,img {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+
+#bgpic{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.luara-left {
+	position:relative;
+	padding:0;
+	overflow: hidden;
+}
+.luara-left ul {
+	position: relative;
+	padding: inherit;
+	margin: 0;
+}
+.luara-left ul li {
+	float: left;
+	padding: inherit;
+	margin: inherit;
+	list-style: none;
+}
+.luara-left ul li img {
+	width: inherit;
+	height: inherit;
+}
+.box{
+	border: 13px solid rgba(255,255,255,0.3);
+	border-radius: 8px;
+	position: fixed;
+	top:16%;
+	left: 3%;
+}
+#focuslist{
+	position: absolute;
+	top: 90%;
+	left: 40%;
+	width: 30%;
+	font-size: 20px;
+	/*height: 15%;*/
+}
+
+.box ol {
+	margin: 0 auto;
+	text-align: center;
+}
+.box ol li {
+	float:left;
+	width: 40px;
+	height: 40px;
+	/*height: 100%;*/
+	margin: 2%;
+	background: url('../images/page.png') 0 no-repeat;
+	/*background: red;*/
+}
+.box ol li.seleted {
+	/*background: #1AA4CA;*/
+	background: url('../images/page-focus.png') 0 no-repeat;
+	font-size: 22px
+}
+p{margin-top: 5px;}
+#button1{
+	position: fixed;
+	left: 72%;
+	top: 63%;
+	outline:none;
+}
+#button2{
+	/*background: url('../images/button.png') no-repeat;*/
+	position: fixed;
+	left: 72%;
+	top: 75%;
+	outline:none;
+}
+#button2 img{
+	width: inherit;
+	height: inherit;
+}
+#button1 img{
+	width: inherit;
+	height: inherit;
+}
+.info{
+	margin:0 auto;
+	text-align: center;
+	font-size: 45px;
+}
+
+/*.received{
+	display: none;
+}
+*/
